@@ -23,8 +23,9 @@ public class WBInitStepDefs {
     public void step1(){
         System.out.println("Opening Chrome after key & Value set ");
         System.out.println("");
+        System.setProperty("webdriver.chrome.driver",".\\src\\test\\Utilities\\chromedriver.exe");
         dr = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver",".\\WBInit\\src\\test\\Utilities");
+//        System.setProperty("webdriver.chrome.driver",".\\WBInit\\src\\test\\Utilities");
        // dr.get("https://www.google.com/intl/en-GB/gmail/about/#");
     }
     @Then("^Open Gmail in Chrome$")
